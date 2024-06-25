@@ -1014,7 +1014,7 @@
           </section>
           <section class="contact__form">
             <iframe name="hiddenFrame"></iframe>
-            <form id="contact_form" class="contact_form" action="https://docs.google.com/forms/d/1QEcGQAdywedJmepSvanlLy9fpHj4AdNL_TTVC4CnmI4/formResponse" method="POST" target="hiddenFrame">
+            <form id="contact_form" class="contact_form" action="https://docs.google.com/forms/d/1QEcGQAdywedJmepSvanlLy9fpHj4AdNL_TTVC4CnmI4/formResponse" method="POST" target="hiddenFrame" onsubmit="revealMessage()">
               <div class="form-group">
                 <label for="name" class="required">Name</label>
                 <input name="entry.1883415049" type="text" id="name" class="form-control" required="required" placeholder="이름을 적어주세요">
@@ -1033,7 +1033,7 @@
               </div>
               <button id="submit" class="submit" name="submit" type="submit" value="Submit" onclick="{this.handleClick}">Submit</button>
             </form>
-            <div class="thank_message hidden">
+            <div id="thank_you" class="thank_message hidden">
               <h5>Thank You</h5>
               <p>연락주셔서 감사합니다. 빠르게 답변드리겠습니다</p>
             </div>
@@ -1055,6 +1055,6 @@
   </footer>
 
   <script type="text/javascript" id="script-compiled-js" src="assets/js/script-bundle.min.js?ver=240618"></script>
-  <script type="text/javascript" id="main-js" src="assets/js/global.min.js?ver=240618"></script>
+  <script type="text/javascript" id="main-js" src="assets/js/global.js"></script>
 </body>
 </html>
